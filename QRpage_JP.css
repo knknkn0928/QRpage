@@ -9,6 +9,12 @@ h3 {
     font-weight: 900;
 }
 
+h2 {
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
 section {
     background-color: #d3d622;
     padding: 15% 8% 10%;
@@ -20,6 +26,11 @@ ul {
     padding-left: 12px;
 }
 
+li {
+    word-break:normal;
+    font-size: 0.9rem;
+}
+
 li::marker {
     content: "•  ";
     font-size: 0.9rem;
@@ -28,6 +39,8 @@ li::marker {
 table {
     font-size: 0.9rem;
     font-weight: bold;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 table th {
@@ -71,6 +84,7 @@ table td {
     font-weight: 800;
     padding: 10px 15px;
     color:#000;
+    font-size: 10px;
 }
 
 .navigation li:hover a {
@@ -107,15 +121,21 @@ table td {
 
 .sec1 .coffilm {
     gap: 8vw;
+    text-align: center;
 }
 
 .sec1 .coffilm div {
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+.sec1 .coffilm .reverse {
+    flex-direction: column-reverse;
+}
+
 .sec1 .coffilm div img {
-    width: 40%;
+    width: 70%;
 }
 
 
@@ -123,7 +143,7 @@ table td {
 
 .sec1 .bottom {
     flex-direction: column;
-    gap: 4vw;
+    gap: 7vw;
 }
 .sec1 .bottom .paper h3 {
     padding-bottom: 10px;
@@ -142,6 +162,20 @@ table td {
 
 /* break point */
 
+@media (min-width: 500px) {
+    .sec1 .coffilm div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec1 .coffilm .reverse {
+        flex-direction: row;
+    }
+    .sec1 .coffilm div img {
+        width: 40%;
+    }
+}
+
 @media (min-width: 695px) {
 
     .sec1 .coffilm {
@@ -159,9 +193,16 @@ table td {
         width: 100%;
         height: 60%;
     }
+
+    li {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 850px) {
+    .sec1 .coffilm div {
+        justify-content: center;
+    }
     .sec1 .coffilm div img {
         width: 90%;
     }
