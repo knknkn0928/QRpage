@@ -15,6 +15,10 @@ h2 {
     margin-bottom: 5px;
 }
 
+.sub_title {
+    font-size: 1.1rem;
+}
+
 section {
     background-color: #d3d622;
     padding: 15% 8% 10%;
@@ -58,19 +62,19 @@ table td {
 }
 
 .navigation {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
-    width: 80%;
+    width: 96%;
 
     font-size: 0.9rem;
     background-color: rgb(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
 
     position: fixed;
-    top:20px;
+    top:0;
     left: 50%;
     transform: translate(-50%, 0);
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .navigation li {
@@ -82,7 +86,7 @@ table td {
     display: block;
     text-decoration: none;
     font-weight: 800;
-    padding: 10px 15px;
+    padding: 13px 15px;
     color:#000;
     font-size: 10px;
 }
@@ -90,9 +94,6 @@ table td {
 .navigation li:hover a {
     color:#008a4c;
 }
-
-
-
 
 
 /* top */
@@ -174,6 +175,16 @@ table td {
     .sec1 .coffilm div img {
         width: 40%;
     }
+    .sub_title {
+        font-size: 1.3rem;
+    }
+
+    .navigation {
+        justify-content: space-evenly;
+    }
+    .navigation li a {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 695px) {
@@ -197,6 +208,18 @@ table td {
     li {
         font-size: 1.1rem;
     }
+
+    .navigation {
+        justify-content: space-evenly;
+        width: 80%;
+        top:20px;
+        font-size: 1rem;
+        border-radius: 10px;    
+    }
+    .navigation li a {
+        font-size: 1rem;
+    }
+    
 }
 
 @media (min-width: 850px) {
@@ -221,6 +244,9 @@ table td {
     .sec1 .bottom .recycle img {
         width: 85%;
     }
+    li {
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 1210px) {
@@ -235,7 +261,7 @@ table td {
         flex-direction: row-reverse;
     }
     .sec1 .coffilm div img {
-        width: 50%;
+        width: 45%;
         height: 100%;
     }
     .sec1 .coffilm div div {
@@ -250,5 +276,12 @@ table td {
     }
     section {
         padding: 10% 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .sub_title {
+        font-size: 1.1rem;
     }
 }
