@@ -88,7 +88,7 @@ table td {
     text-decoration: none;
     font-weight: 800;
     padding: 13px 15px;
-    font-size: 10px;
+    font-size: 0.8rem;
     color:#000;
 }
 
@@ -205,7 +205,7 @@ table td {
         justify-content: space-evenly;
     }
     .quick_menu li a {
-        font-size: 0.8rem;
+        font-size: 1em;
     }
 }
 
