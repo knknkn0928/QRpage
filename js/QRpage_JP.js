@@ -39,18 +39,18 @@ function fullPage() {
     // // 마우스 휠 이벤트 핸들러
     // $(window).on('wheel', handleScroll);
 
-    // 스크롤 이벤트 핸들러를 통해 활성 메뉴 업데이트
-    $(window).scroll(function(){
-        let scltop = $(window).scrollTop() + menuHeight;
-        $.each($sections, function(idx, item){
-            let targetTop = $(this).offset().top;
-            if (targetTop <= scltop) {
-                $menu.removeClass('active');
-                $menu.eq(idx).addClass('active');
+        // 스크롤 이벤트 핸들러를 통해 활성 메뉴 업데이트
+        $(window).scroll(function(){
+            let scltop = $(window).scrollTop() + menuHeight;
+            $.each($sections, function(idx, item){
+                let targetTop = $(this).offset().top;
+                if (targetTop <= scltop) {
+                    $menu.removeClass('active');
+                    $menu.eq(idx).addClass('active');
+                }
+            })
+            if (Math.round( $(window).scrollTop()) == $(document).height() - $(window).height()) {
+                $menu.last().addClass('active').siblings().removeClass('active');
             }
-        })
-        if (Math.round( $(window).scrollTop()) == $(document).height() - $(window).height()) {
-            $menu.last().addClass('active').siblings().removeClass('active');
-        }
-    }).scroll();
-}
+        }).scroll();
+    }
