@@ -8,6 +8,8 @@ tabBtn.click(function(){
   var index = target.index();
   tabBtn.removeClass("active");
   target.addClass("active");
+
   tabCont.css("display","none");
   tabCont.eq(index).css("display","block");
 });
+
