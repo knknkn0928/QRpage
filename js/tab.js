@@ -12,4 +12,3 @@ tabBtn.click(function(){
   tabCont.css("display","none");
   tabCont.eq(index).css("display","block");
 });
-
