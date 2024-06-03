@@ -324,7 +324,7 @@ table td {
 
 
 @media (min-width: 981px) {
-    .sec1 { padding: 10% 0 10%; gap: 50px; }
+    .sec1 { padding: 15% 0 10%; gap: 50px; }
     .sec1 .coffilm {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -334,7 +334,7 @@ table td {
         flex-direction: column;
         justify-content: end;
         padding-bottom: 0;
-        height: 250px;
+        height: 230px;
     }
     .sec1 .coffilm div div {
         justify-content: space-between;

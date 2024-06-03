@@ -13,7 +13,7 @@ body {
   border-radius: 4px;
 }
 #tab-btn {
-  position: fixed; left: 50%; top: 2%;
+  position: fixed; left: 50%; top: 0;
   transform: translatex(-50%);
   z-index: 99;
   backdrop-filter: blur(2px);
@@ -64,14 +64,15 @@ body {
 #tab-btn li.active .white::before {
   background-color: #9DB509;
 }
-
-
 #tab-cont {
   width: 100%;
   padding: 0 3%;
   box-sizing: border-box;
 }
 
-@media (min-width: 981px) {
-  
+
+@media (min-width: 500px) {
+  #tab-btn {
+    top: 3%;
+  }
 }
